@@ -72,7 +72,7 @@ class Song
     SQL
 
     DB[:conn].execute(sql, name).map do |row|
-      self.new_from_db(row)
+      self.new_from_db(row) 
     end.first
   end
 
